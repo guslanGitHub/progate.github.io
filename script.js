@@ -1,13 +1,16 @@
 const bars = document.querySelector('.menu-icon');
 const menuBars = document.querySelector('.header-list');
+bars.addEventListener('click', function(){
+    menuBars.classList.toggle('menu-list');
+});
+
 const item = document.querySelectorAll('.foto');
 const nama = document.querySelector('.nama');
 const asal = document.querySelector('.asal');
-const kunjungi = document.querySelector('.team-title a.kunjungi');
 const data = [
     {
-        nama: "Erwin",
-        asal: "Jawa",
+        nama: "Erwin Sudrajat R",
+        asal: "Cirebon",
         gambar: "gambar1.jpg"
     },
     {
@@ -21,7 +24,7 @@ const data = [
         gambar: "foto2.jpeg"
     },
     {
-        nama: "Ghiffari",
+        nama: "Ghiffari Agsarya Arlin",
         asal: "Kendari",
         gambar: "foto3.jpg"
     },
@@ -31,9 +34,6 @@ const data = [
         gambar: "foto4.jpg"
     }
 ];
-bars.addEventListener('click', function(){
-    menuBars.classList.toggle('menu-list');
-});
 let i = -1;
 let j = 0;
 let k = 1;
@@ -44,38 +44,37 @@ function show(){
         item[0].classList.remove('geser');
         item[1].classList.remove('geser');
         item[2].classList.remove('geser');
-        item[3].classList.remove('geser');
-        item[4].classList.remove('geser');
+        item[3].classList.remove('geser1');
+        item[4].classList.remove('geser1');
         nama.classList.remove('geser');
         asal.classList.remove('geser');
-        kunjungi.classList.remove('geser');
         if(m < data.length){
             m++;
             if(m === 5){
                 m = 0;
-                item[4].setAttribute('src',`${data[m].gambar}`);
+                item[4].setAttribute('src',`gambar/${data[m].gambar}`);
             }else{
-                item[4].setAttribute('src',`${data[m].gambar}`);
+                item[4].setAttribute('src',`gambar/${data[m].gambar}`);
             }
         }
         if(l < data.length){
             l++;
             if(l === 5){
                 l = 0;
-                item[3].setAttribute('src',`${data[l].gambar}`);
+                item[3].setAttribute('src',`gambar/${data[l].gambar}`);
             }else{
-                item[3].setAttribute('src',`${data[l].gambar}`);
+                item[3].setAttribute('src',`gambar/${data[l].gambar}`);
             }
         }
         if(k < data.length){
             k++;
             if(k === 5){
                 k = 0;
-                item[2].setAttribute('src',`${data[k].gambar}`);
+                item[2].setAttribute('src',`gambar/${data[k].gambar}`);
                 nama.innerHTML = data[k].nama;
                 asal.innerHTML = data[k].asal;
             }else{
-                item[2].setAttribute('src',`${data[k].gambar}`);
+                item[2].setAttribute('src',`gambar/${data[k].gambar}`);
                 nama.innerHTML = data[k].nama;
                 asal.innerHTML = data[k].asal;
             }
@@ -84,18 +83,18 @@ function show(){
             j++;
             if(j === 5){
                 j = 0;
-                item[1].setAttribute('src',`${data[j].gambar}`);
+                item[1].setAttribute('src',`gambar/${data[j].gambar}`);
             }else{
-                item[1].setAttribute('src',`${data[j].gambar}`);
+                item[1].setAttribute('src',`gambar/${data[j].gambar}`);
             }
         }
         if(i < data.length){
             i++;
             if(i === 5){
                 i = 0;
-                item[0].setAttribute('src',`${data[i].gambar}`);
+                item[0].setAttribute('src',`gambar/${data[i].gambar}`);
             }else{
-                item[0].setAttribute('src',`${data[i].gambar}`);
+                item[0].setAttribute('src',`gambar/${data[i].gambar}`);
             }
         }
         setTimeout(() => {
@@ -105,11 +104,10 @@ function show(){
         item[0].setAttribute('class','geser');
         item[1].setAttribute('class','geser');
         item[2].setAttribute('class','geser');
-        item[3].setAttribute('class','geser');
-        item[4].setAttribute('class','geser');
+        item[3].setAttribute('class','geser1');
+        item[4].setAttribute('class','geser1');
         nama.setAttribute('class','geser');
         asal.setAttribute('class','geser');
-        kunjungi.setAttribute('class','geser');
         setTimeout(() => {
             show();
         }, 500);
