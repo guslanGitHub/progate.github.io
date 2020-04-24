@@ -46,7 +46,7 @@ header{
 
 /* wrapper-top */
 .wrapper-top{
-    background-image: url("gambar/background.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     background-position-y: -250px;
     background-attachment: fixed;
@@ -134,7 +134,7 @@ header{
 }
 /* wrapper-ourTeam */
 .wrapper-ourTeam {
-    background-image: url("gambar/background.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     background-position-y: -200px;
     background-attachment: fixed;
