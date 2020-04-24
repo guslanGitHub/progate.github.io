@@ -76,21 +76,18 @@
         text-align: center;
     }
     /* our team */
-    .wrapper-ourTeam .ourTeam .team-6{
+    .garis{
         width: 50%;
-        padding: 10px;
-        box-sizing: border-box;
     }
-    .wrapper-ourTeam .ourTeam .kedua, .wrapper-ourTeam .ourTeam .keempat, .wrapper-ourTeam .ourTeam .kesatu, .wrapper-ourTeam .ourTeam .kelima{
+    .prof1, .prof2, .prof4, .prof5{
+        width: 0;
+        height: 0;
         display: none;
     }
-    .kiri{
-        left: -80px;
-        transition: 0.5s;
-    }
-    .kanan{
-        right: -80px;
-        transition: 0.5s;
+    .geser{
+        transform: translateX(-100px);
+        opacity: 0;
+        transition: 1s;
     }
 
 }
