@@ -1,58 +1,96 @@
-/* Untuk Tablet */
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-  
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-  
-  .heading h2 {
-    font-size: 20px;
-  }
+/* tabled */
+@media(max-width:1000px){
+    .header-logo{
+        margin-left: 20px;
+    }
+    .workplace-content{
+        flex-wrap: wrap;
+    }
+    .workplace-kiri,.workplace-kanan{
+        width: 90%;
+    }
+    .workplace-kiri{
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+    .workplace-kanan h4{
+        text-align: center;
+    }
+    .kiri{
+        left: -250px;
+        transition: 0.5s;
+    }
+    .kanan{
+        right: -250px;
+        transition: 0.5s;
+    }
 }
+/* handpon */
+@media(max-width:670px){
+    .header-logo{
+        margin-left: 20px;
+    }
+    .header-list{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        color: white;
+        padding: 15px 0 15px 0px;
+        margin-right: 20px;
+        text-align: right;
+        font-size: 30px;
+    }
+    .header-menu{
+        float: left;
+        width: 100%;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-list li a{
+        width: 100%;
+    }
 
-/* Untuk Smartphone */
-@media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
-  }
-  
-  footer {
-    text-align: center;
-  }
-  
-  .btn {
-    width: 100%;
-  }
-  
-  .facebook {
-    margin-bottom: 10px;
-  }
-  
-  .top-wrapper {
-    text-align: left;
-  }
-  
-  /* Tambahkan CSS untuk header-right */
-  .header-right{
-    display: none;
-  }
-  
-  /* Tambahkan CSS untuk menu-icon */
-  .menu-icon{
-    display: block;
-  }
-  
-  .top-wrapper h1 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  
-  .top-wrapper p {
-    font-size: 14px;
-    line-height: 20px;
-  }
+    .heading-wrapper h1{
+        font-size: 40px;
+    }
+    .heading-wrapper h2{
+        font-size: 20px;
+    }
+    .garis{
+        width: 50%;
+    }
+    .workplace-content{
+        flex-wrap: wrap;
+    }
+    .workplace-kiri,.workplace-kanan{
+        width: 90%;
+    }
+    .workplace-kiri{
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+    .workplace-kanan h4{
+        text-align: center;
+    }
+    /* our team */
+    .wrapper-ourTeam .ourTeam .team-6{
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .wrapper-ourTeam .ourTeam .kedua, .wrapper-ourTeam .ourTeam .keempat, .wrapper-ourTeam .ourTeam .kesatu, .wrapper-ourTeam .ourTeam .kelima{
+        display: none;
+    }
+    .kiri{
+        left: -80px;
+        transition: 0.5s;
+    }
+    .kanan{
+        right: -80px;
+        transition: 0.5s;
+    }
+
 }
