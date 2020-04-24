@@ -1,242 +1,118 @@
-/* header */
-header{
-    background-color: rgba(0,0,0,.8);
-    position: fixed;
+.main{
     width: 100%;
+    background: linear-gradient(rgba(33,33,33,0.8), rgba(240,240,240));
+    padding: 100px 0;
+    text-align: center;
 }
 .container{
     max-width: 1170px;
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
 }
-.header-logo{
-    float: left;
-}
-.header-logo img{
-    padding-top: 15px;
-}
-.header-menu{
-    float: right;
-}
-.menu-icon{
-    display: none;
-}
-.header-list{
-    display: flex;
-}
-.header-list li a{
-    display: inline-block;
-    width: 120px;
-    text-align: center;
-    color: #ddd;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 20px 0;
-    transition: all 0.5s;
-}
-.header-list li a:hover{
-    background-color: rgba(200,200,200,0.6);
-    text-shadow: 0 0 2px rgba(200,200,200,0.8);
-}
-.active{
-    background-color: rgba(200,200,200,0.6);
-    text-shadow: 0 0 2px rgba(200,200,200,0.8);
-}
-/* akhir header */
-
-/* wrapper-top */
-.wrapper-top{
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-position-y: -250px;
-    background-attachment: fixed;
-    padding: 200px 0 120px 0;
-    text-align: center;
-}
-.heading-wrapper h1, .heading-wrapper h2{
-    font-size: 50px;
-    color: white;
-}
-.heading-wrapper h2{
-    font-size: 30px;
-    padding-top: 10px;
-    font-weight: bold;
-}
-
-.wrapper-top a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 30px;
-    background-color: rgb(22, 136, 243);
-    margin-top: 10px;
-    border-radius: 30px;
-    color: white;
-    font-weight: bold;
-}
-.fa-youtube{
-    color: red;
-}
-
-/* bagian umum */
-.garis{
-    width: 500px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    border: 1.5px solid orangered;
-    border-radius: 2px;
-}
-.workplace, .wrapper-ourTeam{
-    padding: 80px 0;
-    text-align: center;
-}
-.workplace-judul h3, .wrapper-ourTeam h3{
+.heading h3{
     font-size: 30px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    color: #555;
-    opacity: 0.8;
-}
-/* akhir bagian umum */
-
-/* bagian workplace */
-.garis-workplace{
-    border: 1.5px solid #555;
-    width: 350px;
-    opacity: 0.8;
-}
-.workplace-content{
-    margin-top: 35px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.workplace-kiri, .workplace-kanan{
-    width: 45%;
-}
-.workplace-kiri img{
-    width: 100%;
-    border-radius: 3px;
-}
-.workplace-kanan{
-    background: linear-gradient(rgba(76, 75, 75, 0.3), rgba(75,75,75,.1));
-    text-align: left;
-    border-radius: 3px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.workplace-kanan h4{
-    font-size: 24px;
-    padding: 10px 10px;
-}
-.workplace-kanan p{
-    font-family: 'Dancing Script', cursive;
-    font-size: 20px;
-    padding: 0 10px 10px 10px;
-}
-/* wrapper-ourTeam */
-.wrapper-ourTeam {
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position-y: -200px;
-    background-attachment: fixed;
-}
-.wrapper-ourTeam h3{
     color: #ddd;
-    opacity: 0.8;
 }
-.garis-ourTeam {
-    width: 350px;
+.garis{
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     border: 1.5px solid #ddd;
-    opacity: 0.8;
+    border-radius: 2px;
 }
-.wrapper-ourTeam .ourTeam{
-    margin-top: 35px;
+.myTeam{
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
-.wrapper-ourTeam .ourTeam .team-6{
-    width: 18%;
+.profile{
+    width: 250px;
     padding: 10px;
     box-sizing: border-box;
-    position: relative;
 }
-.arah{
-    position: absolute;
-    color: white;
-    font-size: 40px;
-    opacity: 0.3;
-    top: 100px;
-}
-.kiri{
-    left: -350px;
-    transition: 0.5s;
-}
-.kanan{
-    right: -350px;
-    transition: 0.5s;
-}
-.kanan:hover{
-    opacity: 1;
-    transform: translateX(20px) scale(2);
-}
-.kiri:hover{
-    opacity: 1;
-    transform: translateX(-20px) scale(2);
-}
-.wrapper-ourTeam .ourTeam .kedua, .wrapper-ourTeam .ourTeam .keempat{
-    width: 13%;
-    padding: 10px;
-    box-sizing: border-box;
-    opacity: 0.5;
-}
-.wrapper-ourTeam .ourTeam .kesatu, .wrapper-ourTeam .ourTeam .kelima{
-    width: 9%;
-    padding: 10px;
-    box-sizing: border-box;
-    opacity: 0.3;
-}
-.team-gambar{
-    border: 5px solid wheat;
+.foto-profile{
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    /* border: 3px solid rgb(212, 212, 212);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.7); */
     border-radius: 50%;
-    box-shadow: 0 0 5px 3px #333;
+    box-sizing: border-box;
     overflow: hidden;
 }
-.team-gambar img{
-    width: 100%;
-    height: 180px;
+.foto-profile img{
+    border: 3px solid rgb(212, 212, 212);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
-.team-title{
-    margin-top: 25px;
-    color: white;
+.prof1{
+    margin-right: -160px;
 }
-.team-title h4, .team-title p{
+.prof2{
+    margin-right: -130px;
+}
+.prof3{
+    z-index: 2;
+}
+.prof4{
+    margin-left: -130px;
+    z-index: 1;
+}
+.prof5{
+    margin-left: -160px;
+}
+.foto-prof2, .foto-prof4{
+    width: 120px;
+    height: 120px;
+    opacity: 0.6;
+}
+.foto-prof1, .foto-prof5{
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
+}
+.foto-prof2 img, .foto-prof4 img{
+    width: 120px;
+    height: 120px;
+}
+.foto-prof1 img, .foto-prof5 img{
+    width: 90px;
+    height: 90px;
+}
+.title{
+    margin-top: 25px;
+    color: #555;
+}
+.title h4{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-style: italic;
+    text-shadow: 0 0 1px #fff;
+}
+.title p{
+    margin: 8px 0;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Teko', sans-serif;
     font-style: italic;
-    letter-spacing: 3px;
-    text-shadow: 0 0 1px #222;
-}
-.team-title p{
-    font-size: 18px;
-}
-.team-title a{
-    display: inline-block;
-    margin-top: 5px;
-    text-decoration: none;
-    background-color: rgba(57, 93, 253, 0.9);
-    color: white;
-    border-radius: 4px;
-    padding: 10px 15px;
-    letter-spacing: 5px;
-}
-.team-title a:hover{
-    background-color: rgba(57, 93, 253, 0.7);
+    color: rgb(41, 136, 245);
 }
 
 .geser{
-    transform: translateX(-100px);
+    transform: translateX(-100px) scale(0.5);
     opacity: 0;
-    transition: 0.3s;
+    transition: 1s;
+}
+.geser1{
+    transform: translateX(-100px) scale(1.5);
+    opacity: 0;
+    transition: 1s;
 }
