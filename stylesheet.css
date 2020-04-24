@@ -1,3 +1,138 @@
+/* header */
+header{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-logo{
+    float: left;
+}
+.header-logo img{
+    padding-top: 15px;
+}
+.header-menu{
+    float: right;
+}
+.menu-icon{
+    display: none;
+}
+.header-list{
+    display: flex;
+}
+.header-list li a{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    color: #ddd;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 0;
+    transition: all 0.5s;
+}
+.header-list li a:hover{
+    background-color: rgba(200,200,200,0.6);
+    text-shadow: 0 0 2px rgba(200,200,200,0.8);
+}
+.active{
+    background-color: rgba(200,200,200,0.6);
+    text-shadow: 0 0 2px rgba(200,200,200,0.8);
+}
+/* akhir header */
+
+/* wrapper-top */
+.wrapper-top{
+    background-image: url("gambar/background.jpg");
+    background-size: cover;
+    background-position-y: -250px;
+    background-attachment: fixed;
+    padding: 200px 0 120px 0;
+    text-align: center;
+}
+.heading-wrapper h1, .heading-wrapper h2{
+    font-size: 50px;
+    color: white;
+}
+.heading-wrapper h2{
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.wrapper-top a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(22, 136, 243);
+    margin-top: 10px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+.fa-youtube{
+    color: red;
+}
+
+/* bagian umum */
+.garis{
+    width: 500px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: 1.5px solid orangered;
+    border-radius: 2px;
+}
+.workplace, .wrapper-ourTeam{
+    padding: 80px 0;
+    text-align: center;
+}
+.workplace-judul h3, .wrapper-ourTeam h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #555;
+    opacity: 0.8;
+}
+/* akhir bagian umum */
+
+/* bagian workplace */
+.garis-workplace{
+    border: 1.5px solid #555;
+    width: 350px;
+    opacity: 0.8;
+}
+.workplace-content{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.workplace-kiri, .workplace-kanan{
+    width: 45%;
+}
+.workplace-kiri img{
+    width: 100%;
+    border-radius: 3px;
+}
+.workplace-kanan{
+    background: linear-gradient(rgba(76, 75, 75, 0.3), rgba(75,75,75,.1));
+    text-align: left;
+    border-radius: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.workplace-kanan h4{
+    font-size: 24px;
+    padding: 10px 10px;
+}
+.workplace-kanan p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 0 10px 10px 10px;
+}
+/* wrapper-ourTeam */
 .main{
     width: 100%;
     background: linear-gradient(rgba(33,33,33,0.8), rgba(240,240,240));
