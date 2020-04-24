@@ -1,204 +1,242 @@
-* {
-  box-sizing: border-box;
+/* header */
+header{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
 }
-
-body {
-  margin: 0;
-  font-family: "Lucida Grande";
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
 }
-
-a {
-  text-decoration: none;
+.header-logo{
+    float: left;
 }
-
-.clear {
-  clear: left;
+.header-logo img{
+    padding-top: 15px;
 }
-
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
+.header-menu{
+    float: right;
 }
-
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
+    display: none;
+}
+.header-list{
+    display: flex;
+}
+.header-list li a{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    color: #ddd;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 0;
+    transition: all 0.5s;
+}
+.header-list li a:hover{
+    background-color: rgba(200,200,200,0.6);
+    text-shadow: 0 0 2px rgba(200,200,200,0.8);
+}
+.active{
+    background-color: rgba(200,200,200,0.6);
+    text-shadow: 0 0 2px rgba(200,200,200,0.8);
+}
+/* akhir header */
+
+/* wrapper-top */
+.wrapper-top{
+    background-image: url("gambar/background.jpg");
+    background-size: cover;
+    background-position-y: -250px;
+    background-attachment: fixed;
+    padding: 200px 0 120px 0;
+    text-align: center;
+}
+.heading-wrapper h1, .heading-wrapper h2{
+    font-size: 50px;
+    color: white;
+}
+.heading-wrapper h2{
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
 }
 
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.wrapper-top a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(22, 136, 243);
+    margin-top: 10px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+.fa-youtube{
+    color: red;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+/* bagian umum */
+.garis{
+    width: 500px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: 1.5px solid orangered;
+    border-radius: 2px;
+}
+.workplace, .wrapper-ourTeam{
+    padding: 80px 0;
+    text-align: center;
+}
+.workplace-judul h3, .wrapper-ourTeam h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: #555;
+    opacity: 0.8;
+}
+/* akhir bagian umum */
+
+/* bagian workplace */
+.garis-workplace{
+    border: 1.5px solid #555;
+    width: 350px;
+    opacity: 0.8;
+}
+.workplace-content{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.workplace-kiri, .workplace-kanan{
+    width: 45%;
+}
+.workplace-kiri img{
+    width: 100%;
+    border-radius: 3px;
+}
+.workplace-kanan{
+    background: linear-gradient(rgba(76, 75, 75, 0.3), rgba(75,75,75,.1));
+    text-align: left;
+    border-radius: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.workplace-kanan h4{
+    font-size: 24px;
+    padding: 10px 10px;
+}
+.workplace-kanan p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 0 10px 10px 10px;
+}
+/* wrapper-ourTeam */
+.wrapper-ourTeam {
+    background-image: url("gambar/background.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+    background-attachment: fixed;
+}
+.wrapper-ourTeam h3{
+    color: #ddd;
+    opacity: 0.8;
+}
+.garis-ourTeam {
+    width: 350px;
+    border: 1.5px solid #ddd;
+    opacity: 0.8;
+}
+.wrapper-ourTeam .ourTeam{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.wrapper-ourTeam .ourTeam .team-6{
+    width: 18%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.arah{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    opacity: 0.3;
+    top: 100px;
+}
+.kiri{
+    left: -350px;
+    transition: 0.5s;
+}
+.kanan{
+    right: -350px;
+    transition: 0.5s;
+}
+.kanan:hover{
+    opacity: 1;
+    transform: translateX(20px) scale(2);
+}
+.kiri:hover{
+    opacity: 1;
+    transform: translateX(-20px) scale(2);
+}
+.wrapper-ourTeam .ourTeam .kedua, .wrapper-ourTeam .ourTeam .keempat{
+    width: 13%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+.wrapper-ourTeam .ourTeam .kesatu, .wrapper-ourTeam .ourTeam .kelima{
+    width: 9%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.3;
+}
+.team-gambar{
+    border: 5px solid wheat;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 3px #333;
+    overflow: hidden;
+}
+.team-gambar img{
+    width: 100%;
+    height: 180px;
+    border-radius: 50%;
+}
+.team-title{
+    margin-top: 25px;
+    color: white;
+}
+.team-title h4, .team-title p{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    text-shadow: 0 0 1px #222;
+}
+.team-title p{
+    font-size: 18px;
+}
+.team-title a{
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    background-color: rgba(57, 93, 253, 0.9);
+    color: white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    letter-spacing: 5px;
+}
+.team-title a:hover{
+    background-color: rgba(57, 93, 253, 0.7);
 }
 
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.geser{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 0.3s;
 }
