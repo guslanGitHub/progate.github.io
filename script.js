@@ -53,29 +53,29 @@ function show(){
             m++;
             if(m === 5){
                 m = 0;
-                item[4].setAttribute('src',`gambar/${data[m].gambar}`);
+                item[4].setAttribute('src',`${data[m].gambar}`);
             }else{
-                item[4].setAttribute('src',`gambar/${data[m].gambar}`);
+                item[4].setAttribute('src',`${data[m].gambar}`);
             }
         }
         if(l < data.length){
             l++;
             if(l === 5){
                 l = 0;
-                item[3].setAttribute('src',`gambar/${data[l].gambar}`);
+                item[3].setAttribute('src',`${data[l].gambar}`);
             }else{
-                item[3].setAttribute('src',`gambar/${data[l].gambar}`);
+                item[3].setAttribute('src',`${data[l].gambar}`);
             }
         }
         if(k < data.length){
             k++;
             if(k === 5){
                 k = 0;
-                item[2].setAttribute('src',`gambar/${data[k].gambar}`);
+                item[2].setAttribute('src',`${data[k].gambar}`);
                 nama.innerHTML = data[k].nama;
                 asal.innerHTML = data[k].asal;
             }else{
-                item[2].setAttribute('src',`gambar/${data[k].gambar}`);
+                item[2].setAttribute('src',`${data[k].gambar}`);
                 nama.innerHTML = data[k].nama;
                 asal.innerHTML = data[k].asal;
             }
@@ -84,18 +84,18 @@ function show(){
             j++;
             if(j === 5){
                 j = 0;
-                item[1].setAttribute('src',`gambar/${data[j].gambar}`);
+                item[1].setAttribute('src',`${data[j].gambar}`);
             }else{
-                item[1].setAttribute('src',`gambar/${data[j].gambar}`);
+                item[1].setAttribute('src',`${data[j].gambar}`);
             }
         }
         if(i < data.length){
             i++;
             if(i === 5){
                 i = 0;
-                item[0].setAttribute('src',`gambar/${data[i].gambar}`);
+                item[0].setAttribute('src',`${data[i].gambar}`);
             }else{
-                item[0].setAttribute('src',`gambar/${data[i].gambar}`);
+                item[0].setAttribute('src',`${data[i].gambar}`);
             }
         }
         setTimeout(() => {
