@@ -24,7 +24,25 @@
         right: -250px;
         transition: 0.5s;
     }
+    /* footer */
+    .myFooter{
+        justify-content: space-evenly;
+    }
+    .logo-footer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .logo-footer img{
+        width: 200px;
+    }
+    .kotak{
+        width: 30%;
+    }
 }
+
+
+
 /* handpon */
 @media(max-width:670px){
     .header-logo{
@@ -90,4 +108,22 @@
         transition: 1s;
     }
 
+    /* footer */
+    .myFooter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .garisFooter{
+        margin: 0 auto;
+    }
+    .kotak{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .teamFooter{
+        padding-left: 10px;
+    }
 }
